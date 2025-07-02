@@ -52,7 +52,7 @@ app.post('/api/v1/users/:userId/sightings', (req, res) => {
     functions.writeToFile('./data/sightings.json', allSightings);
 
     // Return code OK (body is REQUIRED)
-    return res.status(200).json({ success: true });
+    return res.status(201).json({ success: true });
 });
 
 // Edit a sighting
